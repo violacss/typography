@@ -1,0 +1,11 @@
+@function is-rtl-support($data)
+	@return if($data and mixin-exists("rtl"), true, false)
+
+@function get-font-size-selector($mq-prefix, $index)
+	@return #{$mq-prefix}fs-#{$index}
+
+@function get-line-height-selector($mq-prefix, $index)
+	@return #{$mq-prefix}lh-#{$index}
+
+@function get-font-weight-selector($mq-prefix, $name)
+	@return #{$mq-prefix}fw-#{$name}
