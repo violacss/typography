@@ -2,10 +2,25 @@
 	@return if($data and mixin-exists("rtl"), true, false)
 
 @function get-font-size-selector($mq-prefix, $index)
-	@return #{$mq-prefix}fs-#{$index}
+	@return #{$mq-prefix}f-#{$index}
 
 @function get-line-height-selector($mq-prefix, $index)
 	@return #{$mq-prefix}lh-#{$index}
 
 @function get-font-weight-selector($mq-prefix, $name)
 	@return #{$mq-prefix}fw-#{$name}
+
+@function get-text-alignment-selector($mq-prefix, $name)
+	@return #{$mq-prefix}ta-#{$name}
+
+@function get-text-transform-selector($mq-prefix, $name)
+	@return #{$mq-prefix}tt-#{$name}
+
+@function get-text-decoration-selector($mq-prefix, $name)
+	@return #{$mq-prefix}td-#{$name}
+
+@function get-vertical-align-selector($mq-prefix, $name)
+	@return #{$mq-prefix}va-#{$name}
+
+@function get-font-style-selector($mq-prefix, $name)
+	@return #{$mq-prefix}fs-#{$name}

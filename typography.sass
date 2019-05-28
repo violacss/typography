@@ -2,6 +2,10 @@
 @import src/functions
 @import src/mixins
 
+=rtl
+	.rtl &, &.rtl
+		@content
+
 @if mixin-exists("media-query")
 	@each $prefix, $size in $media-query-list
 		+media-query($size)
@@ -24,6 +28,27 @@
 				$index: index($line-heights, $lh)
 				+line-height($index, $lh, nth($line-heights-rtl, $index), $prefix)
 
+			// Text-Align
+			@each $name, $ta in $text-alignments
+				+text-align($name, $ta, $prefix)
+
+			//Text-Transformation
+			@each $name, $tt in $text-transformations
+				+text-transform($name, $tt, $prefix)
+
+			//Text-Decoration
+			@each $name, $td in $text-decorations
+				+text-decoration($name, $td, $prefix)
+
+			//Vertical-Alignment
+			@each $name, $va in $vertical-alignments
+				+vertical-align($name, $va, $prefix)
+
+			//Font-Style
+			@each $name, $fs in $font-styles
+				+font-style($name, $fs, $prefix)
+
+
 @else
 	// Font-Families
 	@each $name, $font in $fonts
@@ -43,3 +68,23 @@
 	@each $line-height in $line-heights
 		$index: index($line-heights, $line-height)
 		+line-height($index, $line-height, nth($line-heights-rtl, $index))
+
+	// Text-Align
+	@each $name, $ta in $text-alignments
+		+text-align($name, $ta)
+
+	//Text-Transformation
+	@each $name, $tt in $text-transformations
+		+text-transform($name, $tt)
+
+	//Text-Decoration
+	@each $name, $td in $text-decorations
+		+text-decoration($name, $td)
+
+	//Vertical-Alignment
+	@each $name, $va in $vertical-alignments
+		+vertical-align($name, $va)
+
+	//Font-Style
+	@each $name, $fs in $font-styles
+		+font-style($name, $fs)

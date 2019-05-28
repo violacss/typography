@@ -29,3 +29,30 @@
 		#{get-font-weight-selector($mq-prefix, $name)}
 			+rtl
 				font-weight: $font-weight-rtl
+
+=text-align($name, $alignment, $mq-prefix:"")
+	.#{get-text-alignment-selector($mq-prefix, $name)}
+		@if length($alignment) == 1
+			text-align: $alignment
+		@else
+			text-align: nth($alignment, 1)
+			@if is-rtl-support(nth($alignment, 2))
+				+rtl
+					text-align: nth($alignment, 2)
+
+=text-transform($name, $transformation, $mq-prefix:"")
+	.#{get-text-transform-selector($mq-prefix, $name)}
+		text-transform: $transformation
+
+=text-decoration($name, $decoration, $mq-prefix:"")
+	.#{get-text-decoration-selector($mq-prefix, $name)}
+		text-decoration: $decoration
+
+=vertical-align($name, $va, $mq-prefix:"")
+	.#{get-vertical-align-selector($mq-prefix, $name)}
+		vertical-align: $va
+
+=font-style($name, $fs, $mq-prefix:"")
+	.#{get-font-style-selector($mq-prefix, $name)}
+		font-style: $fs
+
