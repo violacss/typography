@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 10
+cache: yarn
+deploy:
+  provider: npm
+  email: amirhosseinab@outlook.com
+  api_key:
+    secure: LWpwJSIVrvjfoj6/yVQ0p2cJ9ze49yHH0usCX/8PUxZbvgmLQ/+SnDSaXksappQI10JjiWQeXRCkkAjzU/d9lAwDtz7v0X6kRoD8pSLEpVCdHKCrZ5nB5kl1fMNyzp6yVz/3dxbf9n3oUh9FrX01qrgndlrX2Jv91Lx2xH7QvQH27aBIBoBdkhJ1Al9yRyplgFd+3146qCWaNtSDYMjahfNC2qt9+P3/zhQK5KUxVLHrbY3Cz8lBq6FfA/PeFuhXr2LJL+8wMM7lf6r2k2JJzBHSgtmNoohM9iE6HI2OwcQDgONSDTDTBPHcCZQ9JwRb72U0Z8CVMk+h7SBHYTpGmIYiamye7gkgCrpZlrcisgZF1AdWphx2JXaPmAWDKru+ZZ6PhK3gjamldtSp+cOkwxwTmYdR9kFlQ7TCWjTpjROYYsZmxezGBj0930uE+o4Qx/Zj8GL9JRHNr3jD7UCj9lnZmymPNUuyLhhKfeZCVF9ccLflEzCtbK9o+kAshEy5dJ3HEI2N2GUYkEAX0T09haZanF6os1chZTcLun2T5TEP5HbFfqSfBBhwAH3CuKaOMhToNHFaKKGUMm/pHywDiv4FASMWetODDLBuH7FXXH9XgvsEeZ3UN1CI8mCXCOoUw0KpUoLxfRCI3wUYyHYVL0UNH2MIzUUJ0uW8MiEIy8I=
+  on:
+    tags: true
+    branch: master
+  skip_cleanup: true
