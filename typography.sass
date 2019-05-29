@@ -2,9 +2,7 @@
 @import src/functions
 @import src/mixins
 
-=rtl
-	.rtl &, &.rtl
-		@content
+// If $generate-css is true then it creates css class. Otherwise it creates placeholder selector.
 
 @if mixin-exists("media-query")
 	@each $prefix, $size in $media-query-list
