@@ -1,5 +1,5 @@
 {
-  "name": "@violacss/typography",
+  "name": "@violaui/typography",
   "version": "0.1.0",
   "description": "Every typography-related stuff of the Viola framework placed here",
   "main": "typography.sass",
@@ -8,7 +8,7 @@
 		"build": "webpack",
 		"test": "yarn run build"
 	},
-	"repository": "https://github.com/violacss/typography.git",
+	"repository": "https://github.com/violaui/typography.git",
   "author": "amirhosseinab",
   "license": "MIT",
 	"keywords": [
