@@ -25,4 +25,3 @@ __and the CDN link is:__
 ```html
 <link href="https://unpkg.com/@violaui/typography@0.1.0/css/typography.min.css" rel="stylesheet">
 ```
-

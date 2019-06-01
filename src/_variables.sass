@@ -1,21 +1,44 @@
-$generate-css: true !default
-
-$media-query-list: ("": null,) !default
-
 $sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif !default
 $sans: georgia, times, sans-serif !default
 $sans-serif-rtl: Arial, sans-serif !default
 $sans-rtl: Tahoma, sans-serif !default
 $code: Consolas, monaco, monospace !default
 
-$fonts: (sans-serif: ($sans-serif, $sans-serif-rtl), sans: ($sans, $sans-rtl), code: ($code,)) !default
-$font-sizes: (1: (0.7rem, 0.6rem), 2: (0.9rem, 0.8rem), 3: (1.6rem, 1.4rem), 4: (2.5rem, 2.2rem), 5: (4.1rem, 3.6rem), 6: (6.6rem, 5.8rem)) !default
-$font-weights: (light: (100, 200), regular :(300, 400), medium: (500, 700), bold:(700, 900)) !default
-$line-heights: (1: (1.2, 1.1), 2: (1.4, 1.3), 3: (1.5, 1.6)) !default
-$letter-spacings: (normal: .1em, tight:-.05em, mega:.25em)
+$font-sizes: fib(0.7rem, 0.9rem, 6, $start-with-zero: false) !default
+$font-sizes-rtl: fib(0.6rem, 0.8rem, 6, $start-with-zero: false) !default
 
-$text-alignments: (l:left, r: right, c: center, j: justify, s: (left right), e: (right left))
-$text-transformations: (n: none, c: capitalize, l: lowercase, u: uppercase)
-$text-decorations: (n: none, u: underline, l: line-through)
-$vertical-alignments: (base: baseline, m: middle, t: top, b: bottom)
-$font-styles: (i: italic, n: normal)
+$font-weights: 100 300 500 700 !default
+$font-weights-rtl: 200 400 700 900 !default
+
+$line-heights: 1.2 1.4 1.5 !default
+$line-heights-rtl: 1.1 1.3 1.6 !default
+
+$text-indents: 0 1.5em -1.5em !default
+$text-indents-rtl: null !default
+
+$text-shadows: 1px 1px 1px rgba(0, 0, 0, 0.25), (1px 1px 2px rgba(0, 0, 0, 0.3)), (1px 1px 3px rgba(0, 0, 0, 0.4)) !default
+$text-shadows-rtl: null !default
+
+$letter-spacings: 0.1em -0.05em 0.25em !default
+$letter-spacings-rtl: null !default
+
+$word-spacings: normal -0.15em 0.4em !default
+$word-spacings-rtl: null !default
+
+// Prepare data required structures
+$font-families: make-map-list(($sans-serif, $sans, $code), ($sans-serif-rtl, $sans-rtl), (sans-serif sans code))
+$font-sizes: make-map-list($font-sizes, $font-sizes-rtl)
+$font-weights: make-map-list($font-weights, $font-weights-rtl, light regular medium bold)
+$font-styles: make-map-list(italic, $names: i)
+$text-alignments: make-map-list((left right center justify left right), (null null null null right left), l r c j s e)
+$text-transformations: make-map-list(none capitalize lowercase uppercase, $names: -non -cap -low -upp)
+$text-decorations: make-map-list(none underline line-through, $names: -normal -underline -strike)
+$text-indents: make-map-list($text-indents, $text-indents-rtl, $names: -no-indent -indent -reverse-indent)
+$text-overflow: make-map-list(clip ellipsis, $names: text-clip ellipsis)
+$text-shadows: make-map-list($text-shadows, $text-shadows-rtl, $names: -shadow-1 -shadow-2 -shadow-3)
+$vertical-alignments: make-map-list(baseline middle top bottom, $names: -bl -m -t -b)
+$line-heights: make-map-list($line-heights, $line-heights-rtl)
+$letter-spacings: make-map-list($letter-spacings, $letter-spacings-rtl, -normal -dense -sparse)
+$word-spacings: make-map-list($word-spacings, $word-spacings-rtl, -normal -dense -sparse)
+$writing-mode: make-map-list(horizontal-tb vertical-rl vertical-lr, $names: -horizontal -vertical-rl -vertical-lr)
+$white-space: make-map-list(nowrap pre pre-wrap pre-line, $names: nowrap pre-only pre-wrap pre-line)

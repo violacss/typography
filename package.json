@@ -1,16 +1,16 @@
 {
-  "name": "@violaui/typography",
-  "version": "0.1.0",
-  "description": "Every typography-related stuff of the Viola framework placed here",
-  "main": "typography.sass",
+	"name": "@violaui/typography",
+	"version": "0.1.0",
+	"description": "Every typography-related stuff of the Viola framework placed here",
+	"main": "typography.sass",
 	"style": "typography.sass",
 	"scripts": {
 		"build": "webpack",
 		"test": "yarn run build"
 	},
 	"repository": "https://github.com/violaui/typography.git",
-  "author": "amirhosseinab",
-  "license": "MIT",
+	"author": "amirhosseinab",
+	"license": "MIT",
 	"keywords": [
 		"css",
 		"scss",
@@ -31,6 +31,7 @@
 		"last 2 versions"
 	],
 	"devDependencies": {
+		"@violaui/pegbox": "^0.1.2",
 		"clean-webpack-plugin": "^2.0.2",
 		"css-loader": "^2.1.1",
 		"cssnano-preset-advanced": "^4.0.7",
