@@ -1,9 +1,9 @@
 {
 	"name": "@violaui/typography",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Every typography-related stuff of the Viola framework placed here",
-	"main": "typography.sass",
-	"style": "css/typography.min.css",
+	"main": "css/typography.min.css",
+	"style": "typography.sass",
 	"scripts": {
 		"build": "webpack",
 		"test": "yarn run build"
