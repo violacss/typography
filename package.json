@@ -1,9 +1,10 @@
 {
 	"name": "@violaui/typography",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"description": "Every typography-related stuff of the Viola framework placed here",
-	"main": "css/typography.min.css",
+	"main": "typography.sass",
 	"style": "typography.sass",
+	"unpkg": "css/typography.min.css",
 	"scripts": {
 		"build": "webpack",
 		"test": "yarn run build"
@@ -23,6 +24,12 @@
 		"rtl",
 		"typography",
 		"bidirectional-css"
+	],
+	"files": [
+		"typography.sass",
+		"src",
+		"css/typography.min.css",
+		"css/typography.min.css.map"
 	],
 	"publishConfig": {
 		"access": "public"

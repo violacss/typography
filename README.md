@@ -20,7 +20,7 @@ __or__
 $ yarn add @violaui/typography --dev
 ```
 
-__and the CDN link is:__
+__The CDN link for the latest version is:__
 
 ```html
 <link href="https://unpkg.com/@violaui/typography" rel="stylesheet">
