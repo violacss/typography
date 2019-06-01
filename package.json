@@ -1,6 +1,6 @@
 {
 	"name": "@violaui/typography",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Every typography-related stuff of the Viola framework placed here",
 	"main": "css/typography.min.css",
 	"style": "typography.sass",
@@ -31,7 +31,7 @@
 		"last 2 versions"
 	],
 	"devDependencies": {
-		"@violaui/pegbox": "^0.2.0",
+		"@violaui/pegbox": "^0.2.1",
 		"clean-webpack-plugin": "^2.0.2",
 		"css-loader": "^2.1.1",
 		"cssnano-preset-advanced": "^4.0.7",
