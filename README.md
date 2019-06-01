@@ -1,10 +1,10 @@
-# typography
+# Typography
 
-<a href="https://travis-ci.org/violaui/typography"><img src="https://img.shields.io/travis/violaui/typography.svg?style=flat-square" alt="Travis"></a>
-<a href="https://www.npmjs.com/package/@violaui/typography"><img src="https://img.shields.io/npm/v/@violaui/typography.svg?style=flat-square" alt="npm"></a>
-<a href="https://www.npmjs.com/package/@violaui/typography"><img src="https://img.shields.io/bundlephobia/minzip/@violaui/typography.svg?style=flat-square" alt="npm bundle size"></a>
-<a href="https://www.npmjs.com/package/@violaui/typography"><img src="https://img.shields.io/npm/dt/@violaui/typography.svg?color=%235e7de4&style=flat-square" alt="npm"></a>
-<a href="https://github.com/violaui/typography/blob/master/LICENSE"><img src="https://img.shields.io/github/license/violaui/typography.svg?color=%23aa55aa&style=flat-square" alt="License"></a>
+[![Travis][Travis]](https://travis-ci.org/violaui/typography)
+[![Version][Version]](https://www.npmjs.com/package/@violaui/typography)
+[![Downloads][Downloads]](https://www.npmjs.com/package/@violaui/typography)
+[![Size][Size]](https://unpkg.com/@violaui/typography)
+[![License][License]](https://github.com/violaui/typography/blob/master/LICENSE)
 
 Every typography-related stuff of the __Viola framework__ placed here.
 
@@ -23,5 +23,12 @@ $ yarn add @violaui/typography --dev
 __and the CDN link is:__
 
 ```html
-<link href="https://unpkg.com/@violaui/typography@0.1.0/css/typography.min.css" rel="stylesheet">
+<link href="https://unpkg.com/@violaui/typography" rel="stylesheet">
 ```
+
+
+[Travis]: https://img.shields.io/travis/violaui/typography.svg?style=flat-square
+[Version]: https://img.shields.io/npm/v/@violaui/typography.svg?style=flat-square
+[Downloads]: https://img.shields.io/npm/dt/@violaui/typography.svg?style=flat-square
+[Size]: https://img.shields.io/bundlephobia/minzip/@violaui/typography.svg?style=flat-square
+[License]: https://img.shields.io/github/license/violaui/typography.svg?color=%23aa55aa&style=flat-square

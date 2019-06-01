@@ -25,20 +25,3 @@ $letter-spacings-rtl: null !default
 $word-spacings: normal -0.15em 0.4em !default
 $word-spacings-rtl: null !default
 
-// Prepare data required structures
-$font-families: make-map-list(($sans-serif, $sans, $code), ($sans-serif-rtl, $sans-rtl), (sans-serif sans code))
-$font-sizes: make-map-list($font-sizes, $font-sizes-rtl)
-$font-weights: make-map-list($font-weights, $font-weights-rtl, light regular medium bold)
-$font-styles: make-map-list(italic, $names: i)
-$text-alignments: make-map-list((left right center justify left right), (null null null null right left), l r c j s e)
-$text-transformations: make-map-list(none capitalize lowercase uppercase, $names: -non -cap -low -upp)
-$text-decorations: make-map-list(none underline line-through, $names: -normal -underline -strike)
-$text-indents: make-map-list($text-indents, $text-indents-rtl, $names: -no-indent -indent -reverse-indent)
-$text-overflow: make-map-list(clip ellipsis, $names: text-clip ellipsis)
-$text-shadows: make-map-list($text-shadows, $text-shadows-rtl, $names: -shadow-1 -shadow-2 -shadow-3)
-$vertical-alignments: make-map-list(baseline middle top bottom, $names: -bl -m -t -b)
-$line-heights: make-map-list($line-heights, $line-heights-rtl)
-$letter-spacings: make-map-list($letter-spacings, $letter-spacings-rtl, -normal -dense -sparse)
-$word-spacings: make-map-list($word-spacings, $word-spacings-rtl, -normal -dense -sparse)
-$writing-mode: make-map-list(horizontal-tb vertical-rl vertical-lr, $names: -horizontal -vertical-rl -vertical-lr)
-$white-space: make-map-list(nowrap pre pre-wrap pre-line, $names: nowrap pre-only pre-wrap pre-line)
