@@ -31,10 +31,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@violaui/pegbox@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@violaui/pegbox/-/pegbox-0.2.1.tgz#9f6aab7e565da6c4045b3f1bd370d203cabec52e"
-  integrity sha512-/qiH85RqFICRsP/n36yzDQn0TVGFlQ+Uy2WfuFc+JDglIVURWtZCZtfhc1iT4JC2VBtINm9k/kOkpJrMsXICCw==
+"@violaui/pegbox@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@violaui/pegbox/-/pegbox-0.2.2.tgz#ea82485e352790cc1cdf86c9ec0165db69530636"
+  integrity sha512-633f31fiopzceehcNDC0EiCSNTqTL9Ift/AgfMaH7tkldjoyUL0rAznYvdEPJuElUdaM7x9KYlYZLFfH56yWBw==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
