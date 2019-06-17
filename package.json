@@ -10,7 +10,10 @@
 		"test": "yarn run build"
 	},
 	"repository": "https://github.com/violaui/typography.git",
-	"author": "amirhosseinab",
+	"author": {
+		"name": "Amir Hossein Abdolkhalegh",
+		"url": "https://github.com/amirhosseinab"
+	},
 	"license": "MIT",
 	"keywords": [
 		"css",

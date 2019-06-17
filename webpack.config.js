@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.BannerPlugin({
-      banner: `${pkg.name} v${pkg.version} | ${pkg.repository} | ${pkg.license} License`
+      banner: `${pkg.name} v${pkg.version} | ${pkg.repository} | ${pkg.license} License\nAuthor: ${pkg.author.name} | ${pkg.author.url}`
     }),
     new MiniCssExtractPlugin({filename: "typography.min.css"}),
     new OptimizeCssAssetsPlugin({
