@@ -1,5 +1,6 @@
 const path = require("path");
 const pkg = require("./package.json");
+const {peg} = require("@violaui/peg");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -39,7 +40,12 @@ module.exports = {
           {loader: "resolve-url-loader", options: {sourceMap: true}},
           {
             loader: "sass-loader",
-            options: {sourceMap: true, sourceMapContents: false, outputStyle: "compact"}
+            options: {
+              sourceMap: true,
+              sourceMapContents: false,
+              outputStyle: "compact",
+              functions: peg.sassFunctions
+            }
           }
         ]
       }
