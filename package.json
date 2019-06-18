@@ -1,6 +1,6 @@
 {
 	"name": "@violaui/typography",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "Every typography-related stuff of the Viola framework placed here",
 	"main": "typography.sass",
 	"style": "typography.sass",

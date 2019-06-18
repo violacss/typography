@@ -32,9 +32,9 @@
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
 "@violaui/peg@~0":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@violaui/peg/-/peg-0.2.2.tgz#1598b3b6d10546457e00fd6fd681021af80ed20b"
-  integrity sha512-J6bRDyxfXfn+7CEg63UGWKCmN2IAfIB5lyxTx+gjHNkDmQkkQTs1zYZWmW9AhEe8/uMv3Dk6Z0WxbN3u78eLqw==
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@violaui/peg/-/peg-0.2.4.tgz#482ae628dd2129947e7f99d1e4756144a6b038c6"
+  integrity sha512-Wiud8nK+WseHrqY5huW+PcTMgjm58DHccrVAZ5iWe/q4luYNdORCicnIGA4JI3/Zx3qQm2SwTW6/eccG1zjNxQ==
   dependencies:
     node-sass "~4.12"
 
