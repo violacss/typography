@@ -29,6 +29,6 @@ __CDN link of the latest version is:__
 
 [version]: https://img.shields.io/npm/v/@violaui/typography.svg?&logo=npm&style=flat-square
 [travis]: https://img.shields.io/travis/violaui/typography.svg?&logo=travis&style=flat-square
-[size]: https://img.shields.io/bundlephobia/minzip/@violaui/typography.svg?&logo=javascript&label=size&style=flat-square
+[size]: https://img.shields.io/bundlephobia/minzip/@violaui/typography.svg?&logo=css3&label=size&style=flat-square
 [downloads]: https://img.shields.io/npm/dt/@violaui/typography.svg?style=flat-square
 [license]: https://img.shields.io/github/license/violaui/typography.svg?color=%23aa55aa&style=flat-square
