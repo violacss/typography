@@ -21,6 +21,7 @@ The **typography** module of the ViolaUI
   - [webpack](#webpack)
 - [Usage](#usage)
   - [Classes list](#classes-list)
+  - [Sample code](#sample-code)
 - [Customization](#customization)
   - [Properties](#properties)
     - [`font-family`](#font-family)
@@ -135,7 +136,20 @@ These are the generated classes of the typography module:
 
 `.nowrap` `.pre-only` `.pre-wrap` `.pre-line`
 
+### Sample code
 
+```html
+<p class="primary f4 f-medium letter-sparse tt-cap ts">
+	ViolaUI is a direction-agnostic and mobile-first UI toolkit
+</p>
+```
+
+In this sample, the paragraph has the primary font with 4th font size.
+Also, it has a little boldness and a little space between its letter.
+The sentence transforms to capitalize form and at the end, 
+the alignment of the text set to start, in this case, left. However,
+if you add the `.rtl` class to its class list, the alignment change to the right.
+ 
 ## Customization
 If you want to customize any values of the `@violaui/typography` you can set the value of the variables that list below.
 ### Properties
