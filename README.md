@@ -2,19 +2,39 @@
 
 [![Version][version]](https://www.npmjs.com/package/@violaui/typography)
 [![Travis][travis]](https://travis-ci.org/violaui/typography)
-[![Size][size]](https://unpkg.com/@violaui/typography)
 [![Downloads][downloads]](https://www.npmjs.com/package/@violaui/typography)
 [![License][license]](https://github.com/violaui/typography/blob/master/LICENSE)
 
-> Every typography-related stuff of the __Viola framework__ placed here.
+The **typography** module of the ViolaUI  
 
 [version]: https://img.shields.io/npm/v/@violaui/typography.svg?&logo=npm&style=flat-square
 [travis]: https://img.shields.io/travis/violaui/typography.svg?&logo=travis&style=flat-square
-[size]: https://img.shields.io/bundlephobia/minzip/@violaui/typography.svg?&logo=css3&label=size&style=flat-square
 [downloads]: https://img.shields.io/npm/dt/@violaui/typography.svg?style=flat-square
 [license]: https://img.shields.io/github/license/violaui/typography.svg?color=%23aa55aa&style=flat-square
 
-## How to install:
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+ 
+
+- [Installation](#installation)
+- [Usage](#usage)
+    - [webpack](#webpack)
+- [Customization](#customization)
+  - [Properties](#properties)
+    - [`font-family`](#font-family)
+    - [`font-size`](#font-size)
+    - [`font-weight`](#font-weight)
+    - [`line-height`](#line-height)
+    - [`text-indent`](#text-indent)
+    - [`text-shadow`](#text-shadow)
+    - [`letter-spacing`](#letter-spacing)
+    - [`word-spacing`](#word-spacing)
+  - [Passing `null` value to `-rtl` variables](#passing-null-value-to--rtl-variables)
+  - [Passing fewer values than what it requires](#passing-fewer-values-than-what-it-requires)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+ 
+## Installation
 
 ```bash
 $ npm i --save-dev @violaui/typography
@@ -42,7 +62,7 @@ file should be something like the code below:
  
 ```javascript
 const path = require("path")
-const {peg} = require("@violaui/peg")
+const {peg} = require("@violaui/peg") // <-- you should add this line
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 module.exports = {
   mode: "development",
@@ -62,7 +82,9 @@ module.exports = {
           "css-loader",
           {
             loader: "sass-loader",
-            options: {functions: peg.sassFunctions}
+            options: {
+              functions: peg.sassFunctions  // <-- and you should set the functions value
+            }
           }
         ]
       }
@@ -75,46 +97,70 @@ Otherwise, none of `@violaui` modules can't compile.
 
 ## Customization
 If you want to customize any values of the `@violaui/typography` you can set the value of the variables that list below.
+### Properties
+#### `font-family`
+You can change the result of generated classes for `font-family` by these variables:
 
-| Variable Name | Description        | Values|
-| :------------ | :-------------| :-------- |
-| `$primary` | A list of `font-family` names | `Helvetica, Arial, sans-serif`
-| `$secondary` | A list of `font-family` names |  `Times, sans` 
-| `$tertiary` | A list of `font-family` names |  `Roboto, sans-serif`
-| `$primary-rtl` | A list of `font-family` names | `Tahoma, sans` or `null`
-| `$secondary-rtl` | A list of `font-family` names | `Arial, sans` or `null` 
-| `$tertiary-rtl` |  A list of `font-family` names | `Times, sans-serif` or `null`
-| `$code` | A list of `font-family` names | `monaco, monospace`
-| `$font-sizes` | A list of `font-size` with maximum items of 6 | `(1rem, 20px, 4rem, 5em, 30%, 6rem)`
-| `$font-sizes-rtl` | A list of `font-size` with maximum items of 6 | `(1rem, 20px, 4rem, 5em, 30%, 6rem)` or `null`
-| `$font-weights` | A list of `font-weight` with maximum items of 7 | `100 300 400 500 700 800 900`
-| `$font-weights-rtl` | A list of `font-weight` with maximum items of 7 | `100 300 400 500 700 800 900` or `null`
-| `$line-heights` | A list of `line-height` with maximum items of 3 | `1.2, 1.4, 1.5`
-| `$line-heights-rtl` | A list of `line-height` with maximum items of 3 | `1.2, 1.4, 1.5` or `null`
-| `$text-indents` |  A list of `text-indent` with maximum items of 3 | `0, 1.4em, -1.4em`
-| `$text-indents-rtl` | A list of `text-indent` with maximum items of 3 | `0 1.2em -1.2em ` or `null`
-| `$text-shadows` | A list of `text-shadow` with maximum items of 3 | `(1px 1px 1px rgba(0, 0, 0, 0.25)), (1px 1px 2px rgba(0, 0, 0, 0.3))`
-| `$text-shadows-rtl` | A list of `text-shadow` with maximum items of 3 | `(1px 1px 1px rgba(0, 0, 0, 0.25)), (1px 1px 2px rgba(0, 0, 0, 0.3))` or `null`
-| `$letter-spacings` | A list of `letter-spacing` with maximum items of 3| `0.1em -0.05em 0.25em`
-| `$letter-spacings-rtl`| A list of `letter-spacing` with maximum items of 3| `0.1em -0.05em 0.25em` or `null`
-| `$word-spacings` | A list of `word-spacing` with maximum items of 3 | `normal -0.15em 0.4em`
-| `$word-spacings-rtl` | A list of `word-spacing` with maximum items of 3 | `normal -0.15em 0.4em` or `null`
+* `$primary`
+* `$primary-rtl`
+* `$secondary`
+* `$secondary-rtl`
+* `$tertiary`
+* `$tertiary-rtl`
+* `$code`
+
+
+#### `font-size`
+
+* `$font-sizes`
+* `$font-sizes-rtl`
+
+#### `font-weight`
+
+* `$font-weights`
+* `$font-weights-rtl`
+
+#### `line-height`
+
+* `$line-heights`
+* `$line-heights-rtl`
+
+#### `text-indent`
+
+* `$text-indents`
+* `$text-indents-rtl`
+
+#### `text-shadow`
+
+* `$text-shadows`
+* `$text-shadows-rtl`
+
+#### `letter-spacing`
+
+* `$letter-spacings `
+* `$letter-spacings-rtl`
+ 
+#### `word-spacing`
+
+* `$word-spacings`
+* `$word-spacings-rtl`
+
 
 > Notice that you should define these variables before importing the `@violaui/typography`.
 
 For example, you can create a partial SASS file named `_variables.sass` and put all customized variables in it.
 
 ```sass
-$font-sizes: (1rem, 1.2rem, 1.5rem, 2rem, 3.5rem, 6rem)
-$font-sizes-rtl: (0.6rem, 1rem, 1.3rem, 2.2rem, 3.2rem, 5.8rem) 
+$font-sizes: 1rem, 1.2rem, 1.5rem, 2rem, 3.5rem, 6rem
+$font-sizes-rtl: 0.6rem, 1rem, 1.3rem, 2.2rem, 3.2rem, 5.8rem 
 ```
 
-#### Passing `null` value to `-rtl` variables
+### Passing `null` value to `-rtl` variables
 
 If you pass `null` value to any variables that ends with `-rtl`, the classes that generated for related 
 properties won't support bidirectional mode and only support ltr mode.
 
-#### Passing fewer values than what it requires
+### Passing fewer values than what it requires
 
 If you pass fewer values that a variable requires, ViolaUI uses the last value of the sequence for the 
 rest of the classes of that property.
