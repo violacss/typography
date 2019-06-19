@@ -39,9 +39,9 @@
     node-sass "~4.12"
 
 "@violaui/pegbox@~0":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@violaui/pegbox/-/pegbox-0.3.1.tgz#f712726c49d6e79d768b4e357fad5b3703828a65"
-  integrity sha512-Qk6pAcWU3TNfPa1Mb6/UgjJgyZsU9qR9O3lUl67UAo5qGwgVFVCgftbx5gq992ZxbNfQTGNaB3GsU2WLCqTlQg==
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@violaui/pegbox/-/pegbox-0.3.3.tgz#a12a43bd0d529dc9fdecd9ada7748a5e1ca73b07"
+  integrity sha512-U5qmWh/KwIGS8+XWYIrwnoFKYeQhnCyYhRaJswIXJ1WNg0aswfPIAdfsN3kTFqWSEQAV7gPWIancMH5fSLNNaA==
   dependencies:
     "@violaui/peg" "~0"
 
