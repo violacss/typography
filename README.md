@@ -139,8 +139,10 @@ These are the generated classes of the typography module:
 ## Customization
 If you want to customize any values of the `@violaui/typography` you can set the value of the variables that list below.
 ### Properties
+
 #### `font-family`
-You can change the result of generated classes for `font-family` by these variables:
+
+You can change the default value of `font-family` classes by changing these variables: 
 
 * `$primary`
 * `$primary-rtl`
@@ -150,44 +152,94 @@ You can change the result of generated classes for `font-family` by these variab
 * `$tertiary-rtl`
 * `$code`
 
+You can assign a list of font names to each variable. All three `-rtl` variables can have the `null` value.
+
+```sass
+$primary: Arial 'Segoe UI' serif
+$primary-rtl: null
+```
 
 #### `font-size`
+
+You can change the default value of `font-size` classes by changing these variables:
 
 * `$font-sizes`
 * `$font-sizes-rtl`
 
+These two variables can have at most 6 items and exceeded values omit at compile time.
+
 #### `font-weight`
+
+You can change the default value of `font-weight` classes by changing these variables:
 
 * `$font-weights`
 * `$font-weights-rtl`
 
+These two variables can have at most 7 items and exceeded values omit at compile time.
+The 7 provided values assigned to its corresponding names
+
+> __thin, light, regular, medium, bold, extra-bold, black__
+
 #### `line-height`
+
+You can change the default value of `line-height` classes by changing these variables:
 
 * `$line-heights`
 * `$line-heights-rtl`
 
+These two variables can have at most 3 items and exceeded values omit at compile time.
+
 #### `text-indent`
+
+You can change the default value of `text-indent` classes by changing these variables:
 
 * `$text-indents`
 * `$text-indents-rtl`
 
+These two variables can have at most 3 items and exceeded values omit at compile time.
+
+The 3 provided values assigned to its corresponding names
+
+> __no-indent, indent, outdent__ 
+
 #### `text-shadow`
+
+You can change the default value of `text-shadow` classes by changing these variables:
 
 * `$text-shadows`
 * `$text-shadows-rtl`
 
+These two variables can have at most 3 items and exceeded values omit at compile time.
+
 #### `letter-spacing`
+
+You can change the default value of `letter-spacing` classes by changing these variables:
 
 * `$letter-spacings `
 * `$letter-spacings-rtl`
- 
+
+These two variables can have at most 3 items and exceeded values omit at compile time.
+
+The 3 provided values assigned to its corresponding names
+
+> __letter-normal, letter-dense, letter-sparse__ 
+  
+
 #### `word-spacing`
+
+You can change the default value of `word-spacing` classes by changing these variables:
 
 * `$word-spacings`
 * `$word-spacings-rtl`
 
+These two variables can have at most 3 items and exceeded values omit at compile time.
 
-> Notice that you should define these variables before importing the `@violaui/typography`.
+The 3 provided values assigned to its corresponding names
+  
+> __word-normal, word-dense, word-sparse__
+
+
+_**Notice that you should define these variables before importing the `@violaui/typography`.**_
 
 For example, you can create a partial SASS file named `_variables.sass` and put all customized variables in it.
 
