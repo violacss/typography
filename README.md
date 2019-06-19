@@ -17,8 +17,10 @@ The **typography** module of the ViolaUI
  
 
 - [Installation](#installation)
+- [Configuring build systems](#configuring-build-systems)
+  - [webpack](#webpack)
 - [Usage](#usage)
-    - [webpack](#webpack)
+  - [Classes list](#classes-list)
 - [Customization](#customization)
   - [Properties](#properties)
     - [`font-family`](#font-family)
@@ -52,10 +54,9 @@ like __webpack__ or __gulp__, you can use the CDN link, and add it to the `<head
 ```html
 <link href="https://unpkg.com/@violaui/typography/css/typography.min.css" rel="stylesheet">
 ```
+## Configuring build systems
 
-## Usage
-
-#### webpack
+### webpack
 
 If you use webpack as your builder, the configuration of your `webpack.config.js` 
 file should be something like the code below:
@@ -94,6 +95,46 @@ module.exports = {
 ```
 >  Notice that you have to pass the `peg.sassFunctions` to the options of `sass-loader`. 
 Otherwise, none of `@violaui` modules can't compile.
+
+## Usage
+For using the typography module, you need to add the classes that you want to the element that you want. 
+
+These are the generated classes of the typography module:
+
+### Classes list
+
+`.primary` `.scondary` `.teriary` `.code`
+ 
+`.f1` `.f2` `.f3` `.f4` `.f5` `.f6`
+
+`.f-thin` `.f-light` `.f-regular` `.f-medium` `.f-bold` `.f-extra-bold` `.f-black`
+
+`.i`
+
+`.tl` `.tr` `.tc` `.tj` `.ts` `.te` 
+
+`.tt-none` `.tt-cap` `.tt-low` `.tt-upp`
+
+`.no-underline` `.underline` `.strike` 
+
+`.no-indent` `.indent` `.outdent` 
+
+`.text-clip` `.ellipsis`
+
+`.t-shadow-1` `.t-shadow-2` `.t-shadow-3`
+
+`.vertical-base` `.vertical-m` `.vertical-t` `.vertical-b` 
+
+`.lh1` `.lh2` `.lh3` 
+
+`.letter-normal` `.letter-dense` `.letter-sparse` 
+
+`.word-normal` `.word-dense` `.word-sparse` 
+
+`.writing-h` `.writing-vrl` `.writing-vlr` 
+
+`.nowrap` `.pre-only` `.pre-wrap` `.pre-line`
+
 
 ## Customization
 If you want to customize any values of the `@violaui/typography` you can set the value of the variables that list below.
